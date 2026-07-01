@@ -1,0 +1,9 @@
+# IDE
+.idea/
+.vs/
+# Временные файлы Word
+~.docx
+*.tmp
+# Python
+__pycache__/
+*.рус
