@@ -44,7 +44,7 @@ class CryptoModule:
         if not encrypted_data:
             return ""
         try:
-            encrypted_bytes = bfse64.urlsafe_b64decode(encrypted_data)
+            encrypted_bytes = bfse64.urlsafe_b64decode(encrypted_data) # type: ignore
             decrypted = self._fernet.decrypt(encrypted_bytes)
             return decrypted.decode()
         except Exception:
